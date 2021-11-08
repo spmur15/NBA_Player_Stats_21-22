@@ -356,7 +356,7 @@ NBA_df = NBA_df.merge(per_100_poss_df, how='left', left_on='Player', right_on='P
 NBA_df = NBA_df.astype({"Age": int, "G": int, "GS": int, 'FG_total': int,'FGA_total': int,'3P_total': int,'3PA_total': int,'2P_total': int,'2PA_total': int,'FT_total': int,'FTA_total': int,'ORB_total': int,'DRB_total': int,'TRB_total': int,'AST_total': int,'STL_total': int,'BLK_total': int,'TOV_total': int,'PF_total': int,'PTS_total': int})
 
 
-file = open('NBA.csv', 'w')
+file = open('NBA_players.csv', 'w')
 file.write(NBA_df.to_csv())
 file.close()
 
